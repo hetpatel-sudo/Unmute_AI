@@ -1,0 +1,37 @@
+PROJECT UNMUTE GUI UPDATE
+
+This update uses the ORIGINAL Unmuter/Gemini-style GUI from the supplied app.py.
+
+PRESERVED:
+- Original sidebar
+- Original Unmuter logo area
+- New chat button
+- Search / Images / Videos / Library navigation
+- Notebooks section
+- Recents
+- USER profile area
+- Upgrade button
+- Gemini-style greeting
+- Original chat bubbles
+- Original rounded input bar
+- Original model selector
+- Original camera modal
+- Original colors, spacing, fonts, and general styling
+
+UPDATED FUNCTIONALITY:
+1. Camera snapshot now sends the actual base64 image to the backend.
+2. Camera recognition uses Groq's current multimodal model qwen/qwen3.6-27b.
+3. The recognition prompt is restricted to the Project Unmute Chapter 1 gesture labels.
+4. Microphone is now two-click:
+   Click 1 = start recording
+   Click 2 = stop
+   Stop = automatically submit
+5. TTS remains the original toggle button.
+6. API key uses the safe placeholder:
+   YOUR_GROQ_API_KEY_HERE
+
+IMPORTANT:
+The standalone HTML file expects the Flask backend at /api/query.
+Use the Python file to run the complete application.
+
+The original GUI is intentionally not redesigned.

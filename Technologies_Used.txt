@@ -1,0 +1,68 @@
+================================================================================
+PROJECT UNMUTE — TECHNICAL DEEP DIVE & AI ARCHITECTURE BLUEPRINT
+Project Lead: Het R. Patel | Grade 8B-AS, GIIS Ahmedabad, India
+Contact Email: het.patel@globalschoolsalumni.org
+Focus: SDG 10 (Reduced Inequalities), SDG 3 (Good Health), SDG 4, SDG 8, SDG 16, SDG 17
+================================================================================
+
+1. EXECUTIVE OVERVIEW & WORKING AI MODEL STATUS
+--------------------------------------------------------------------------------
+Project Unmute is an integrated bio-digital and computer vision communication system designed to eliminate barriers for non-verbal, deaf, non-signing, illiterate, and migrant populations. 
+
+Currently, the system features a functional Text & Gesture Translation AI model. The working core successfully maps spatial keypoints and gesture inputs into structured text and natural voice synthesis. To elevate the prototype from basic isolated sign matching to fully natural, fluid communication, specific architectural improvements are actively being implemented across natural language processing (NLP), sequence modeling, and real-time processing pipelines.
+
+
+2. COMPREHENSIVE TECHNOLOGY STACK BREAKDOWN
+--------------------------------------------------------------------------------
+[A] Vision & Pose Tracking Engine (Inputs)
+  - Teachable Machine (Pose Mode): Lightweight 17/33 keypoint upper-body pose estimation used in Chapter 1 for rapid, web-browser based emergency gesture identification.
+  - MediaPipe Holistic / Hands API: High-precision 42-point hand landmark tracking and multi-person face mesh extraction utilized in Chapter 2 for complex dynamic signing.
+  - Web Real-Time Camera Pipeline: HTML5 canvas stream running at 30+ FPS, capturing dynamic frame sequences without requiring heavy external hardware.
+
+[B] AI/ML Core & Text AI Model Architecture
+  - Gesture Classification Layer: Rule-based thresholding paired with quantized neural classification models mapping normalized (x, y, z) coordinate vectors.
+  - Text AI & Sequence Translation Model (Working Model):
+      * Current Implementation: Mapped keyword-to-sentence translation dictionary paired with a light transformer/LSTM sequence model that reconstructs raw sign tokens into grammatical English and localized spoken phrases.
+      * Text AI Improvements Underway:
+        1. Context-Aware Beam Search: Implementing dynamic beam search decoding to select the most probable grammatical sentence structure from recognized sign keyframe sequences.
+        2. Semantic Smoothing & Intent Disambiguation: Training lightweight transformer fine-tunes (MobileBERT / DistilBERT) to handle non-standard grammar structures inherent in native sign languages (ASL/ISL).
+        3. Latency Optimization: Quantizing model weights into ONNX / TensorFlow.js web assembly formats to reduce inference latency under 50ms on mobile browsers.
+        4. Edge Resilience: Offline execution support ensuring zero dependency on active cloud server connections during emergency grid outages.
+
+[C] Speech, Voice & Document AI Engines
+  - Web Speech API Engine: Universal Text-to-Speech (TTS) engine delivering low-latency audio output in milliseconds for critical emergency phrases.
+  - Bi-Directional Speech-to-Text (STT): Live speech recognition listening to hearing speakers and converting speech into high-contrast text / visual icons for deaf users.
+  - Optical Character Recognition (OCR) Engine: Tesseract / Document AI scanner integrated in Chapter 2, allowing illiterate users or migrant workers to scan unreadable legal contracts/forms and listen to simplified spoken summaries.
+  - Adaptive AAC Board Engine: Dynamic tap-based visual icon matrix converting multi-icon selections into coherent natural language sentences.
+
+[D] Database & Data Infrastructure
+  - Database Schema: Relational schema tracking Users, Gestures Library, Translation Logs (latency, confidence scores), and Emergency Contacts.
+  - Dataset Architecture: Structured CSV datasets containing Sign IDs, Gesture Labels, Category tags, Landmark counts (21/42), Frame sequence type (Static/Dynamic), required accuracy thresholds (80%-98%), and mapped output text.
+
+
+3. SYSTEM ROADMAP & CHAPTER INTEGRATION
+--------------------------------------------------------------------------------
+- Chapter 1 (SOS Signs - MVP):
+  Focus: Emergency survival signs (Help, Hurt, Water, Food, Emergency, Danger, Stop, Bathroom, Good, Bad).
+  Tech: Teachable Machine Pose + Web Speech API TTS + Lightweight HTML5/JS Frontend.
+
+- Chapter 2 (Dynamic Sentences & Accessibility Suite):
+  Focus: Continuous sentence translation, contract OCR simplification, AAC icon board, bi-directional speech bridge.
+  Tech: MediaPipe Tracking + LSTM/Transformer NLP Engine + OCR Engine + Multi-lingual Voice.
+
+- Chapter 3 (Ambient Spatial Infrastructure):
+  Focus: AR smart glasses mid-air signing, ALS micro-gesture detection, offline quantized NPUs, emotional voice cloning, and direct 911 / emergency API integrations.
+
+- Chapter 4 & 5 (Neural Meshing & Telepathic Network - Long-Term Vision):
+  Focus: Bio-digital nervous system meshing (Ear/Eye/Mouth sensory translation) and contact-to-contact direct virtual network communication without physical screens or vocal cords.
+
+
+4. SUMMARY OF PLANNED IMPROVEMENTS FOR THE TEXT AI MODEL
+--------------------------------------------------------------------------------
+1. Sentence Interpolation: Expanding the working model to automatically infer missing auxiliary verbs (e.g., converting 'I NEED WATER' -> 'Please, I need drinking water urgently').
+2. Multi-Lingual Translation Bridge: Translating mapped English output into regional Indian languages (Hindi, Gujarati, Tamil, etc.) using lightweight neural machine translation (NMT).
+3. Confidence Score Thresholding: Adding safety guardrails to require >95% confidence on critical SOS signs before triggering direct emergency alert APIs.
+
+================================================================================
+Report Prepared By: Het R. Patel (GIIS Ahmedabad, India)
+================================================================================

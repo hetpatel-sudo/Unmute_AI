@@ -1,0 +1,37 @@
+================================================================================
+OFFICIAL SUBMISSION LETTER & APOLOGY FOR DELAYED WEEK 1 SUBMISSION
+Project Name: Project Unmute (AI-Powered Inclusive Communication Bridge)
+Participant Name: Het R. Patel
+Class & Section: Grade 8B-AS
+School: GIIS (Global Indian International School), Ahmedabad, India
+Contact Email: het.patel@globalschoolsalumni.org
+Submission Date: August 2026
+Targeting SDGs: SDG 10 (Reduced Inequalities), SDG 3 (Good Health), SDG 4, SDG 8, SDG 16, SDG 17
+================================================================================
+
+To,
+The Honorable Panel of Judges & Evaluation Committee,
+
+SUBJECT: SINCERE APOLOGY FOR DELAYED WEEK 1 SUBMISSION AND REQUEST FOR COMBINED EVALUATION OF WEEK 1 AND WEEK 2 DELIVERABLES
+
+Respected Judges,
+
+I am writing this letter to formally submit my deliverables for Project Unmute and to sincerely apologize for the delay in submitting the Week 1 requirements within the initial deadline.
+
+During the Week 1 phase, my primary focus was on establishing the core proof-of-concept for 'Chapter 1: SOS Signs & Emergency Assistance'—developing a low-latency, browser-based AI model capable of real-time pose tracking and immediate Text-to-Speech (TTS) conversion for life-critical gestures (Help, Hurt/Pain, Water, Food, Emergency, Danger, Stop, Bathroom, Good, Bad). 
+
+In my pursuit to ensure absolute mathematical rigor, robust dataset curation (including 42 landmark keypoint mappings, dynamic/static frame sequences, and structured database schema tables for telemetry and emergency contacts), and seamless cross-platform browser compatibility, the development time exceeded my original schedule. Rather than submitting an incomplete prototype for Week 1, I made the conscious decision to refine the architecture so that Week 1 functions as a solid, production-grade foundation.
+
+Furthermore, I have integrated the Week 1 baseline directly into the Week 2 framework ('Chapter 2: Dynamic Sentences, OCR Contract Scanner & Adaptive AAC Board'). Week 2 builds directly upon the Week 1 gesture engine by introducing MediaPipe tracking, continuous sequence processing (LSTM/Transformers), OCR document extraction for illiterate/migrant workers, and bi-directional speech translation.
+
+I humbly request the esteemed panel of judges to accept my Week 1 submission alongside my Week 2 submission. Both phases have been packaged together into a unified, comprehensive solution blueprint, complete with training datasets, system architecture diagrams, database schemas, and AI translation logic.
+
+Thank you very much for your understanding, guidance, and patience. I remain deeply committed to using AI to dissolve communication barriers and bring humanity one step closer to universal equality.
+
+Yours respectfully,
+
+Het R. Patel
+Grade 8B-AS, GIIS Ahmedabad, India
+Email: het.patel@globalschoolsalumni.org
+Project Unmute Lead & Creator
+================================================================================
